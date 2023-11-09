@@ -127,6 +127,7 @@ h3 {
     padding: 10px 23px;
 }
 
-.imgm {
-    height: 500px;
-}  
+.full-image {
+    width: 100%;
+    height: auto;
+}
