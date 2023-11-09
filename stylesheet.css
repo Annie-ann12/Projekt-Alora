@@ -127,37 +127,6 @@ h3 {
     padding: 10px 23px;
 }
 
-/* Your existing styles */
-
-/* Responsive CSS */
-@media (max-width: 767px) {
-    .search_button {
-      margin: 0;
-    }
-  
-    .text-left {
-      right: 0;
-    }
-  
-    .cover_image_section {
-      height: auto;
-    }
-  
-    h1.cover_text {
-      top: 30%;
-      left: 50%;
-      transform: translate(-50%, -30%);
-      font-size: 24px;
-    }
-  
-    .cover_button {
-      top: 60%;
-      left: 50%;
-      transform: translate(-50%, -60%);
-      font-size: 16px;
-      padding: 8px 15px;
-    }
-  }
 .imgm {
     height: 500px;
 }  
