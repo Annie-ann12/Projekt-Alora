@@ -87,11 +87,11 @@ h3 {
 }
 .cover_image_section {
     background-color: #B9B3C6;
-    height: 500px;
+    
     
 }
 .cover_image_img {
-    display: flex;
+    
     justify-content: center;
     align-items: center;
     position: relative;
