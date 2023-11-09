@@ -59,7 +59,7 @@ h3 {
     justify-content: end;
     position: relative;
     right: 111px;
-}
+} 
 .d {
     margin-right: 20px;
 }
@@ -87,7 +87,8 @@ h3 {
 }
 .cover_image_section {
     background-color: #B9B3C6;
-    height: 526px;
+    height: 500px;
+    
 }
 .cover_image_img {
     display: flex;
@@ -96,14 +97,10 @@ h3 {
     position: relative;
   }
 
-  .cover_image_img img {
-    height: auto;
-  }
-
   h1.cover_text {
     position: absolute;
-    top: 340px; 
-    left: 22.2%; 
+    top: 288px; 
+    left: 20.5%; 
     line-height: 125.7%;
     letter-spacing: 1.5px;
     transform: translate(-50%, -50%); 
@@ -116,7 +113,7 @@ h3 {
 
 .cover_button {
     position: absolute;
-    top: 85%; 
+    top: 82%; 
     left: 13.7%;
     transform: translate(-50%, -50%);
     background-color: black;
@@ -129,3 +126,38 @@ h3 {
     border-radius: 5px;
     padding: 10px 23px;
 }
+
+/* Your existing styles */
+
+/* Responsive CSS */
+@media (max-width: 767px) {
+    .search_button {
+      margin: 0;
+    }
+  
+    .text-left {
+      right: 0;
+    }
+  
+    .cover_image_section {
+      height: auto;
+    }
+  
+    h1.cover_text {
+      top: 30%;
+      left: 50%;
+      transform: translate(-50%, -30%);
+      font-size: 24px;
+    }
+  
+    .cover_button {
+      top: 60%;
+      left: 50%;
+      transform: translate(-50%, -60%);
+      font-size: 16px;
+      padding: 8px 15px;
+    }
+  }
+.imgm {
+    height: 500px;
+}  
