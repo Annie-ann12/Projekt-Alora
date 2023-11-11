@@ -69,11 +69,13 @@ html, body {
 }
 .iconky {
     display: flex;
-    padding-left: 17vw;
+    left: 18%;
+    flex-wrap: wrap;
 }
 .logo_main {
     align-items: center;
     display: flex;
+    flex-wrap: wrap;
 }
 .searchbar_main_a {
     padding-left: 5vw;
@@ -83,16 +85,15 @@ html, body {
     background-color: transparent;
     position: absolute;
     z-index: 1;
-    padding-top: 0.8vh;
+    ;
 }
 #search {
     color: black;
     font-family: 'Roboto';
     font-weight: 400;
     font-size: 0.6875em;
-    width: 13vw;
-    height: 7vh;
-    position: relative;
+    max-width: 150px;
+    height: 30px;
     margin-right: 35%;
     padding-left: 2.5vw;
     border: 1px solid gray;
@@ -148,4 +149,8 @@ html, body {
     padding: 15px;
     /* border: 15px; */
     position: relative;
+}
+
+.alora_logo {
+
 }
