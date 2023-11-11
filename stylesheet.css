@@ -99,7 +99,7 @@ h3 {
 
   h1.cover_text {
     position: absolute;
-    top: 288px; 
+    top: 65%; 
     left: 20.5%; 
     line-height: 125.7%;
     letter-spacing: 1.5px;
@@ -107,7 +107,7 @@ h3 {
     color: black; 
     font-family: 'Roboto Condensed';
     font-weight: 700;
-    font-size: 40px; 
+    font-size: 3rem; 
     text-transform: uppercase;
 }
 
@@ -121,7 +121,7 @@ h3 {
     text-decoration: none;
     font-family: 'Roboto Condensed';
     font-weight: 400;
-    font-size: 20px;
+    font-size: 1.25rem;
     text-transform: uppercase;
     border-radius: 5px;
     padding: 10px 23px;
@@ -130,4 +130,18 @@ h3 {
 .full-image {
     width: 100%;
     height: auto;
+}
+@media only screen and (max-width: 767px) {
+    .alora_logo>img {
+        width: 112px;
+        height: 38px;
+    }
+    .search_button>svg {
+        width: 18px;
+        height: 18px;
+    }
+    .d {
+        width: 18px;
+        height: 18px;
+    }
 }
