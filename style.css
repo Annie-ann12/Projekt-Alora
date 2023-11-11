@@ -13,9 +13,70 @@ html, body {
     padding: 0;
 }
 
-@media (max-width: 900px) {
-    
+@media (max-width: 932px) {
+  body {
+    font-size: 12px;
   }
+  input#search {
+    width: 200px;
+    padding-left: 7.5vw;
+
+  }
+  .col-xs-12 {
+    width: 100%;
+    justify-content: left;
+    display: flex;
+}
+.col-xs-6.col-md-4.iconky.text-left.n {
+    left: 11%;
+}
+div.d {
+    padding-left: 2.2vw;
+}
+.alora_logo {
+    padding-top: 5px;
+  }
+  .navbar {
+    padding-bottom: 15px;
+  }
+.full-image{
+    top: 22%;
+}
+.cover_text_div{
+    font-size: 5px;
+}
+a.cover_button {
+    font-size: 5px;
+    padding: 4px;
+    top: 33.2%;
+    position: absolute;
+    left: 8.5%;
+}
+.cover_text_div {
+    position: absolute;
+    top: 30%;
+    left: 6.5%;
+}
+
+}
+
+@media (max-width: 380px) {
+.full-image {
+    top: 26%;
+}
+a.cover_button {
+    font-size: 5px;
+    padding: 4px;
+    top: 39.2%;
+    position: absolute;
+    left: 8.5%;
+}
+.cover_text_div {
+    position: absolute;
+    top: 35%;
+    left: 6.5%;
+}}
+
 
 .d-flex {
     display: flex!important;
@@ -27,10 +88,10 @@ html, body {
     position: relative!important;
 }
 .full-image {
-    height: 500px;
+    height: auto;
     overflow: hidden;
     position: absolute;
-    width: 105vw;
+    width: 100%;
 }
 
 .bl {
@@ -106,7 +167,7 @@ html, body {
     align-items: center;
     display: flex;
     justify-content: center;
-    margin-bottom: 15px;
+    margin-bottom: -15px;
 }
 .nav-item>a {
     color: black;
@@ -118,9 +179,7 @@ html, body {
 .nav-item {
     padding: 0 1vw;
 }
-.cover_image_img {
-    display: flex;
-}
+
 
 .cover_text {
     color: black;
@@ -128,10 +187,14 @@ html, body {
     font-weight: 900;
     font-size: 2.2em;
     text-transform: uppercase;
-    left: 10vw;
-    top: 37vh;
     letter-spacing: 0.12em;
     line-height: 1.3em;
+    margin: 0;
+    left: 7.8%;
+}
+
+.cover_image_section{
+    margin-top: 15px;
 }
 .cover_button {
     color: white;
@@ -139,8 +202,7 @@ html, body {
     font-weight: 900;
     font-size: 1em;
     text-transform: uppercase;
-    left: 10vw;
-    top: 40vh;
+    left: 7.8%;
     letter-spacing: 0.12em;
     line-height: 1.3em;
     background-color: black;
@@ -150,7 +212,16 @@ html, body {
     /* border: 15px; */
     position: relative;
 }
-
-.alora_logo {
-
+@media (min-width: 1100px) {
+    .cover_text_div_a {
+        position: absolute;
+        left: 6.3%;
+        top: 115%;
+    }
+    .cover_text_div {
+        position: absolute;
+        top: 90%;
+        left: 5%;
+    }
 }
+
