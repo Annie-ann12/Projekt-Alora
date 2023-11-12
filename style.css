@@ -301,7 +301,7 @@ input[type=checkbox] {
     margin: 4px 15px 0 0;
     line-height: normal;
 }
-input {
+input.t_frm {
     font-size: 0.8em;
     font-weight: 400;
     color: black;
