@@ -133,7 +133,6 @@ document.addEventListener('mousedown', function(event) {
   var mainContainer = document.getElementById('main-container');
 
   if (!form.contains(event.target) && form.style.display === 'block') {
-    // Click is outside the form and the form is visible, close the form
     closeForm();
   }
 });
