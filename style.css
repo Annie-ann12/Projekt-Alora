@@ -212,16 +212,20 @@ a.cover_button {
     /* border: 15px; */
     position: relative;
 }
-@media (min-width: 1100px) {
+@media (min-width: 1000px) {
     .cover_text_div_a {
         position: absolute;
         left: 6.3%;
-        top: 115%;
+        top: 67%;
     }
     .cover_text_div {
         position: absolute;
-        top: 90%;
+        top: 52%;
         left: 5%;
     }
+}
+.open_b {
+    border:none;
+    background-color: transparent;
 }
 

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang=”cs”>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="style-form.css">
+    <title>Login</title>
+</head>
+<body>
+    <div class=”popup” id="myform">
+        <form class="popform">
+            <div class="inlineh1">
+                <h1 class="h1pop v">Vytvořit účet</h1>
+                <h1 class="h1pop p">Přihlášení</h1>
+            </div>
+            <div class="form-text">
+                <input type="text" placeholder="Křesní jméno" name="kresni" class="t_frm" required>
+                <input type="text" placeholder="Příjmení" name="prijmeni" class="t_frm" required>
+                <input type="text" placeholder="E-mail" name="email" class="t_frm" required>
+                <input type="password" placeholder="Heslo" name="kresni" class="t_frm" required>
+            </div>
+            <div class="ch_text">
+                <label for="checkbox" class="check_text">Ano, přihlaste mě k odběru Newsletteru Alora. Potvrzuji, že jsem starší 16 let. Chci dostávat e-mailem informace od společnosti Alora o produktech Alora a exkluzivních nabídkách.</label>
+                <input type="checkbox" id="checkbox" name="checkbox">
+            </div>
+            <div class="s_btn">
+                <button type="submit" class="btn">Odeslat</button>
+            </div>
+        </form>
+    </div>
+    </div>
+    <script>
+        function openForm() {
+          document.getElementById("myForm").style.display = "block";
+        }
+        function closeForm() {
+          document.getElementById("myForm").style.display = "none";
+        }
+    </script>
+        
+</body>
+</html>
