@@ -11,7 +11,7 @@
 </head>
 <body>
     <div id="main-container">
-        <header class="main-content" id="main">
+        <header class="main-content" id="main_body">
                 <div class="container-fluid upper_text">
                     <div class="row upper_text_container">
                         <div class="col-xs-12 col-md-12 upper_div">
@@ -80,6 +80,7 @@
                 </div>
             </nav>
         </header>
+            <!-- Tady máte duplicitní ID -> buď ho odtraňte tady nebo nahoře (podle toho, kde to opravdu potřebujete) -->
             <main class="main-content" id="main">
                 <section class="cover_image_section">
                     <div class="cover_image_img">
@@ -91,11 +92,13 @@
                         </picture>
                     </div>
                     <div class="cover_text_div">
-                        <h1 class="cover_text t">Šperk pro <br> každou příležitost</h1>
+                        <div class="p_box">
+                            <h1 class="cover_text t">Šperk pro <br> každou příležitost</h1>
+                            <div class="button_box">
+                                <a href="#" target="_self" class="cover_button t">Nakoupit nyní</a>
+                            </div>
+                        </div>
                     </div>
-                    <div class="cover_text_div_a">
-                        <a href="#" target="_self" class="cover_button t">Nakoupit nyní</a>
-                    </div> 
                 </section>
                 <section>
                     <div>
