@@ -734,10 +734,26 @@ input.t_frm {
     line-height: normal;
     display: flex;
     justify-content: flex-end;
+    position: relative; 
 }
 
 .razeni_hid {
     display: none;
+    position: absolute; 
+    top: 140%;
+    left: 90%;
+    z-index: 1; 
+    background: #fff;
+    border-radius: 0.25rem;
+    box-shadow: 0 0 0.5rem 0 rgba(0,0,0,.2);
+    margin: 0;
+    min-width: 7.5rem;
+    padding: 0;
+}
+.razeni_hid>li {
+    border-bottom: 0.0625rem solid #ebebeb;
+    margin: 0;
+    padding: 0.3rem 0.3rem;
 }
 .raz_but {
     background-color: transparent;
@@ -745,4 +761,7 @@ input.t_frm {
     text-decoration: underline;
     margin-left: 0.5rem;
 }
+.fled {
 
+}
+  

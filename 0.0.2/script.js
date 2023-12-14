@@ -34,3 +34,15 @@ function closeLoginForm() {
 }
 // test nic neznamená
 console.log('test')
+// prsteny
+function toggleSortingOptions() {
+    var sortingOptions = document.getElementById("sortingOptions");
+    sortingOptions.style.display = (sortingOptions.style.display === "none") ? "block" : "none";
+}
+
+function sortProducts(sortingOption) {
+    // Add your sorting logic here based on the selected option
+    console.log("Sorting products by: " + sortingOption);
+}
+
+  

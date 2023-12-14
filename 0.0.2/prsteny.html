@@ -163,12 +163,14 @@
                 <div class="products">
                     <div class="razeni">
                         <span class="razeni">Řadit podle:</span>
-                        <button class="razeni raz_but" type="button">oblíbenosti</button>
-                        <ul class="razeni_hid">
-                            <li>oblíbenosti</li>
-                            <li>ceny vzestupně</li>
-                            <li>ceny sestupně</li>
-                        </ul>
+                        <div class="fled">
+                            <button class="razeni raz_but" type="button"  onclick="toggleSortingOptions()">oblíbenosti</button>
+                            <ul class="razeni_hid" id="sortingOptions">
+                                <li onclick="sortProducts('oblíbenosti')">oblíbenosti</li>
+                                <li onclick="sortProducts('ceny_vzestupne')">ceny vzestupně</li>
+                                <li onclick="sortProducts('ceny_sestupne')">ceny sestupně</li>
+                            </ul>
+                        </div>
                     </div>
                     <ul class="products_ul">
                         <li>
