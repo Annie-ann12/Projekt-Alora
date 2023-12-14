@@ -130,25 +130,6 @@
     </form>
 </div>
 </div>
-<script>
-document.addEventListener('mousedown', function(event) {
-  var form = document.getElementById('myform');
-  var mainContainer = document.getElementById('main-container');
-
-  if (!form.contains(event.target) && form.style.display === 'block') {
-    closeForm();
-  }
-});
-
-function openForm() {
-  document.getElementById('myform').style.display = 'block';
-  document.getElementById('main-container').classList.add('blur');
-}
-
-function closeForm() {
-  document.getElementById('myform').style.display = 'none';
-  document.getElementById('main-container').classList.remove('blur');
-}
-</script>
+<script type="text/javascript" src="script.js"></script>
 </body>
 </html>
