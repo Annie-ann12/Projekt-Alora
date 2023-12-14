@@ -164,19 +164,18 @@
                     <div class="razeni">
                         <span class="razeni">Řadit podle:</span>
                         <div class="fled">
-                            <button class="razeni raz_but" type="button"  onclick="toggleSortingOptions()">oblíbenosti</button>
+                            <button class="razeni raz_but" type="button"  onclick="toggleSortingOptions()">ceny</button>
                             <ul class="razeni_hid" id="sortingOptions">
-                                <li onclick="sortProducts('oblíbenosti')">oblíbenosti</li>
-                                <li onclick="sortProducts('ceny_vzestupne')">ceny vzestupně</li>
-                                <li onclick="sortProducts('ceny_sestupne')">ceny sestupně</li>
+                                <li onclick="sortProducts('price_ascending')">vzestupně</li>
+                                <li onclick="sortProducts('price_descending')">sestupně</li>
                             </ul>
                         </div>
                     </div>
-                    <ul class="products_ul">
-                        <li>
+                    <ul class="products_ul" id="productsList">
+                        <li data-price="4500">
                             <div class="prod_img_smaller">
                                 <a href="#">
-                                <img class="product_img" src="pexels-the-glorious-studio-10475789.jpg" alt="pink ring">
+                                <img class="product_img" src="třpytivý_zásnubní_prsten.jpg" alt="pink ring">
                                 </a>
                                 <div class="p_a_h">
                                     <h3>
@@ -186,10 +185,10 @@
                                 </div>
                             </div>
                         </li>
-                        <li>
+                        <li data-price="5440">
                             <div class="prod_img_smaller">
                                 <a href="#">
-                                <img class="product_img" src="pexels-the-glorious-studio-10475791.jpg" alt="zasnubni prsten">
+                                <img class="product_img" src="zásnubní_prsten_pro_princeznu.jpg" alt="zasnubni prsten">
                                 </a>
                                 <div class="p_a_h">
                                     <h3>

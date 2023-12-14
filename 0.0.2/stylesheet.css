@@ -741,7 +741,7 @@ input.t_frm {
     display: none;
     position: absolute; 
     top: 140%;
-    left: 90%;
+    left: 88%;
     z-index: 1; 
     background: #fff;
     border-radius: 0.25rem;
@@ -749,6 +749,7 @@ input.t_frm {
     margin: 0;
     min-width: 7.5rem;
     padding: 0;
+    cursor: pointer;
 }
 .razeni_hid>li {
     border-bottom: 0.0625rem solid #ebebeb;
@@ -760,8 +761,6 @@ input.t_frm {
     border: none;
     text-decoration: underline;
     margin-left: 0.5rem;
+    cursor: pointer;
 }
-.fled {
 
-}
-  
