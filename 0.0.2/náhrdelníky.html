@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="stylesheet.css">
+  <title>Prsteny</title>
+</head>
+<body>
+    <div class="blur-container">
+        <header>
+            <div class="head_p_box">
+                <p>DORUČENÍ PŘI NÁKUPU NAD 599 KČ ZDARMA</p>
+            </div>
+            <div class="head_all_box">
+                <div class="bb">
+                    <div class="hidden_nav">
+                        <button type="button" class="hid_menu">
+                            <svg class="s" width="27" height="27" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5 7H19" stroke="#222222" stroke-linecap="round"/>
+                                <path d="M5 12H19" stroke="#222222" stroke-linecap="round"/>
+                                <path d="M5 17H19" stroke="#222222" stroke-linecap="round"/>
+                                </svg>                    
+                        </button>
+                    </div>
+                    <div class="form_box">
+                        <form class="head_form">
+                            <button type="submit" class="button_class">
+                                <svg class="s" xmlns="http://www.w3.org/2000/svg" width="27" height="27" viewBox="0 0 27 27" fill="none">
+                                    <circle cx="12.375" cy="12.375" r="7.875" stroke="#33363F" stroke-width="2"/>
+                                    <path d="M22.5 22.5L19.125 19.125" stroke="#33363F" stroke-width="2" stroke-linecap="round"/>
+                                </svg>
+                            </button>
+                            <input class="search_input" type="text" placeholder="Vyhledat..." name="vyhledat">
+                        </form>
+                    </div>
+                </div>
+                <div class="logo_box small_sc">
+                    <a href="index.html">
+                    <img src="alora - logo.png" alt="Alora Logo" width="185" height="57">
+                    </a>
+                </div>
+                <div class="ikonky-box small_sc">
+                    <svg class="heart s" xmlns="http://www.w3.org/2000/svg" width="27" height="27" viewBox="0 0 27 27" fill="none">
+                        <path d="M5.00701 15.6467L12.8287 22.9944C13.1401 23.2869 13.2958 23.4332 13.4853 23.4388C13.4951 23.4391 13.5049 23.4391 13.5147 23.4388C13.7042 23.4332 13.8599 23.2869 14.1713 22.9944L21.993 15.6467C24.1937 13.5794 24.4609 10.1774 22.61 7.79183L22.262 7.34326C20.0478 4.4894 15.6033 4.96802 14.0475 8.22786C13.8277 8.68833 13.1723 8.68833 12.9525 8.22786C11.3967 4.96802 6.95219 4.4894 4.73799 7.34326L4.38996 7.79183C2.53907 10.1774 2.80631 13.5794 5.00701 15.6467Z" stroke="#33363F" stroke-width="2"/>
+                    </svg>
+                    <button type="button" class="open_b button" onclick="openForm()">
+                        <svg class="pb person s" xmlns="http://www.w3.org/2000/svg" width="27" height="27" viewBox="0 0 27 27" fill="none">
+                            <circle cx="13.5" cy="7.875" r="4.5" stroke="#33363F" stroke-width="2" stroke-linecap="round"/>
+                            <path d="M6.14822 20.0487C6.9028 17.2788 9.64673 15.75 12.5176 15.75H14.4824C17.3533 15.75 20.0972 17.2788 20.8518 20.0487C21.0726 20.8593 21.2496 21.7341 21.3293 22.6262C21.3784 23.1763 20.9273 23.625 20.375 23.625H6.625C6.07272 23.625 5.62163 23.1763 5.67075 22.6262C5.75041 21.7341 5.9274 20.8593 6.14822 20.0487Z" stroke="#33363F" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </button>
+                    <svg class="pb bag s" xmlns="http://www.w3.org/2000/svg" width="27" height="27" viewBox="0 0 27 27" fill="none">
+                        <path d="M9 13.5L9 9C9 6.51472 11.0147 4.5 13.5 4.5V4.5C15.9853 4.5 18 6.51472 18 9L18 13.5" stroke="#33363F" stroke-width="2" stroke-linecap="round"/>
+                        <path d="M4.19435 13.7928C4.33942 12.0519 4.41196 11.1815 4.98605 10.6532C5.56013 10.125 6.4336 10.125 8.18053 10.125H18.8195C20.5664 10.125 21.4399 10.125 22.014 10.6532C22.588 11.1815 22.6606 12.0519 22.8057 13.7928L23.4445 21.4589C23.529 22.4724 23.5712 22.9792 23.2741 23.3021C22.977 23.625 22.4685 23.625 21.4514 23.625H5.5486C4.53155 23.625 4.02302 23.625 3.72592 23.3021C3.42882 22.9792 3.47105 22.4724 3.55551 21.4589L4.19435 13.7928Z" stroke="#33363F" stroke-width="2"/>
+                    </svg>
+                </div>
+            </div>
+            <nav class="blur-container">
+                <div class="nav_box">
+                    <div class="nav_text">
+                        <a href="#">Vánoce</a>
+                    </div>
+                    <div class="nav_text">
+                        <a href="#">Náušnice</a>
+                    </div>
+                    <div class="nav_text">
+                        <a href="#">Prsteny</a>
+                    </div>
+                    <div class="nav_text">
+                        <a href="#">Náhrdelníky</a>
+                    </div>
+                    <div class="nav_text">
+                        <a href="#">Portfolio</a>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <section class="sec_pr">
+                <div class="rings_container">
+                        <h1 class="pr_h1">Prsteny</h1>
+                        <p class="p_prs">Vyberte si dokonalý prsten pro sebe nebo pro někoho výjimečného.</p>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+</html>
