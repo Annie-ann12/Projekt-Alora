@@ -763,4 +763,23 @@ input.t_frm {
     margin-left: 0.5rem;
     cursor: pointer;
 }
-
+.koupit_button {
+    background-color: transparent;
+    color: #000;
+    font-family: Roboto;
+    font-size: calc(0.5rem + 0.390625vw);
+    font-style: normal;
+    font-weight: 400;
+    border: 0.05rem solid lightgrey;
+    width: 8rem;
+    height: 1.5rem;
+    border-radius: 0.3rem;
+    cursor: pointer;
+    text-transform: lowercase;
+}
+.div_koupit_button {
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    margin: 0.8rem;
+}

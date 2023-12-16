@@ -148,6 +148,9 @@ function renderProducts(filteredProducts) {
                         <a href="#">${product.name}</a>
                     </h3>
                     <p>${product.price} Kč</p>
+                    <div class="div_koupit_button">
+                        <button type="button" class="koupit_button">Koupit</button>
+                    </div>
                 </div>
             </div>
         `;
