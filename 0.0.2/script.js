@@ -68,7 +68,7 @@ document.addEventListener('change', function (event) {
         var filterType = checkbox.name;
         var filterValue = checkbox.id;
 
-        
+        //podle čeho se třídí
         if (checkbox.checked) {
             if (filterType === 'zlato'|| filterType === 'stříbro' || filterType === 'obecnykov') {
                 selectedFilters['kov'].push(filterValue);
@@ -101,7 +101,7 @@ document.addEventListener('change', function (event) {
 
 
 
-
+//třídění
 function filterProducts() {
     console.log('Selected Filters:', selectedFilters);
     return products.filter(product => {
@@ -156,7 +156,7 @@ function getImageFileName(productName) {
     return productName.replace(/\s+/g, '_').toLowerCase() + '.jpg';
 }
 
-
+//třídění dle ceny - výpočet
 function getPriceCategory(price) {
     if (price < 2000) {
         return '1';
@@ -185,15 +185,13 @@ function sortProducts(sortBy) {
 
 //validace hesla
 function validatePasswordOnInput(value) {
-    // list regexů na validaci 
-    //// vypíšeme jeden po jednom, abychom mohli později updatovat zprávu s požadavky v reálném čase
-    const lengthRegex = /.{8,}/; // minimálně 8 znaků
-    const uppercaseRegex = /[A-Z]/; // velké písmeno
-    const lowercaseRegex = /[a-z]/; // malé písmeno
-    const digitRegex = /\d/; // číslo
-    const specialCharRegex = /[.!@#$%^&*]/; // speciální znak
+    const lengthRegex = /.{8,}/; 
+    const uppercaseRegex = /[A-Z]/;
+    const lowercaseRegex = /[a-z]/; 
+    const digitRegex = /\d/; 
+    const specialCharRegex = /[.!@#$%^&*]/; 
 
-    // otestuje, jestli projde zadaný input regexem 
+    // otestuje, jestli projde zadaný input 
     const isLengthValid = lengthRegex.test(value); 
     const hasUppercase = uppercaseRegex.test(value);
     const hasLowercase = lowercaseRegex.test(value);
@@ -213,7 +211,6 @@ function validatePasswordOnInput(value) {
     if (isLengthValid && hasUppercase && hasLowercase && hasDigit && hasSpecialChar) {
         passwordInput.style.border = "2px solid green";
         document.getElementById("submitButton").disabled = false;
-      // pokud ne, červenou
       } else {
         passwordInput.style.border = "2px solid red";
         document.getElementById("submitButton").disabled = true;
@@ -222,9 +219,9 @@ function validatePasswordOnInput(value) {
 
   // validace hesla
   function validateForm() {
-    const password = document.getElementById("passwordInput").value; // password input
+    const password = document.getElementById("passwordInput").value; 
 
-    if (!isPasswordValid) { // pokud nesplnuje pozadavky, nepustit dal.
+    if (!isPasswordValid) { 
       alert("Zadané heslo nesplňuje požadavky.");
       return false;
     }

@@ -257,7 +257,7 @@
                 <input type="text" placeholder="Křesní jméno" name="kresni" class="t_frm" required>
                 <input type="text" placeholder="Příjmení" name="prijmeni" class="t_frm" required>
                 <input type="text" placeholder="E-mail" name="email" class="t_frm" required>
-                <input type="password" placeholder="Heslo" name="kresni" class="t_frm" id="passwordInput" oninput="validatePasswordOnInput(this.value)" required>
+                <input type="password" placeholder="Heslo" name="password" class="t_frm" id="passwordInput" oninput="validatePasswordOnInput(this.value)" required>
                     <div id="passwordRequirements" class="requirements">
                         <p>Požadavky:&nbsp;</p>
                         <p id="lengthReq">8 znaků,&nbsp;</p>
@@ -272,7 +272,7 @@
                 <label for="checkbox" class="check_text">Ano, přihlaste mě k odběru Newsletteru Alora. Potvrzuji, že jsem starší 16 let. Chci dostávat e-mailem informace od společnosti Alora o produktech Alora a exkluzivních nabídkách.</label>
             </div>
             <div class="s_btn">
-                <button type="submit" class="btn" id="submitButton">Odeslat</button>
+                <button type="submit" name="submit" class="btn" id="submitButton">Odeslat</button>
             </div>
         </form>
     </div>
@@ -286,14 +286,6 @@
             <div class="form-text">
                 <input type="text" placeholder="E-mail" name="email" class="t_frm" required>
                 <input type="password" placeholder="Heslo" name="kresni" class="t_frm" id="passwordInput" oninput="validatePasswordOnInput(this.value)" required>
-                <div id="passwordRequirements" class="requirements">
-                    <p>Požadavky:&nbsp;</p>
-                    <p id="lengthReq">8 znaků,&nbsp;</p>
-                    <p id="uppercaseReq">velké písmeno,&nbsp;</p>
-                    <p id="lowercaseReq">malé písmeno,&nbsp;</p>
-                    <p id="digitReq">číslice,&nbsp;</p>
-                    <p id="specialCharReq">speciální znak</p>
-                </div>
             </div>
             <div class="ch_text">
                 <input type="checkbox" id="checkbox" name="checkbox">

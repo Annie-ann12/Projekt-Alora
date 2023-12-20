@@ -60,24 +60,18 @@ form.head_form {
     margin: 0 0rem 0 15rem;
 }
 @media screen and (min-width: 769px) and (max-width: 1023px) {
-    .head_all_box {
-
-    }
+    
     .ikonky-box {
         margin: 0 0rem 0 6rem;
     }
     .form_box {
         margin: 0rem 5rem 0rem 0rem
     }
-    .search_input {
-
-    }
+   
 }
 /* mobile */
 @media screen and (max-width: 768px) {
-    .head_all_box {
-
-    }
+    
     .ikonky-box {
         margin: 0 0rem 0 1rem;
     }
@@ -183,12 +177,7 @@ button.nakoupit {
     width: 100%;
 }
 @media screen and (min-width: 700px) and (max-width: 1023px) {
-    .cover_text_box>a>.nakoupit{
-       
-}
-.cover_text_box>h1 {
 
-}
 }
 /* mobile navigace*/
 @media screen and (max-width: 699px) {
@@ -637,9 +626,7 @@ input.t_frm {
 .sec_pr {
     margin: 0 0 1rem 0;
 }
-.aside_bar {
 
-}
 .sec_pr_2 {
     margin: 2rem 10rem 0 10rem;
     display: flex;
