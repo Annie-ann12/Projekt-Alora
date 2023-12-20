@@ -48,9 +48,14 @@ form.head_form {
 .nav_box {
     display: flex;
 }
-.pb {
+.pb, .heart {
     margin: 0 0 0 1rem;
+    cursor: pointer;
 }
+.open_b {
+    cursor: pointer;
+}
+
 .ikonky-box {
     margin: 0 0rem 0 15rem;
 }
@@ -153,7 +158,7 @@ form.head_form {
     font-size: calc(1rem + 0.390625vw);
     font-style: normal;
     font-weight: 700;
-    line-height: 125.688%; /* 3.14219rem */
+    line-height: 125.688%; 
     letter-spacing: 0.0625rem;
     text-transform: uppercase;
     margin: 0.5rem 0.5rem 0.5rem 0.5rem;
@@ -243,8 +248,8 @@ button.nakoupit {
 }
 .il_img {
     display: flex;
-    justify-content: space-between; /* Equal space between images */
-    flex-wrap: wrap; /* Allow images to wrap to the next line on smaller screens */
+    justify-content: space-between; 
+    flex-wrap: wrap; 
     margin: 2rem 2vw 1rem 2vw;
 }
 
@@ -270,18 +275,7 @@ button.nakoupit {
         width: 28%; 
     }
 }
-/*
-.il_img_middle, .il_text {
-    display: flex;
-    justify-content: center;
-    margin: 0 1rem 1rem 1rem;
-}
-.il_text_middle {
-    display: flex;
-    text-align: center;
 
-}
-*/
 .il_img_middle, .il_text_middle {
     display: flex;
     justify-content: space-around;
@@ -488,11 +482,12 @@ body {
     font-weight: 400;
     color: black;
 }
-
+.checkll {
+    align-self: center;
+}
 .ch_text {
     display: flex;
-    flex-direction: row-reverse;
-    align-items: flex-start;
+    align-items: flex-end;
 }
 
 .form-text {
@@ -522,7 +517,7 @@ body {
     max-width: 450px;
 }
 
-h1.h1pop.v {
+.popup>.popform>.inlineh1>.h1pop.v {
     padding-right: 3vw;
 }
 
@@ -601,6 +596,12 @@ input.t_frm {
     z-index: 9;
     width: 582px;
 }
+.requirements {
+    font-size: 0.75em;
+    font-weight: 400;
+    display: flex;
+    margin-bottom: 0.5rem;
+}
 
 /* rings html */
 .ring_cov, .product_img {
@@ -616,7 +617,7 @@ input.t_frm {
     align-items: center;
     flex-direction: column;
 }
-.pr_h1 {
+.pr_h1, .kosik_div>h1 {
     color: #000;
     font-family: Roboto;
     font-size: calc(1rem + 0.390625vw);
@@ -625,7 +626,7 @@ input.t_frm {
     line-height: normal;
     padding: 0 0 10px 0;
 }
-.p_prs {
+.p_prs, .kosik_div>p {
     color: #000;
     font-family: Roboto;
     font-size: calc(0.6rem + 0.390625vw);
@@ -782,4 +783,13 @@ input.t_frm {
     /* align-items: center; */
     justify-content: center;
     margin: 0.8rem;
+}
+/* kosik */
+.kosik_div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 215px;
+    justify-content: center;
 }

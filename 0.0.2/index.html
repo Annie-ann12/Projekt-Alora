@@ -48,10 +48,12 @@
                             <path d="M6.14822 20.0487C6.9028 17.2788 9.64673 15.75 12.5176 15.75H14.4824C17.3533 15.75 20.0972 17.2788 20.8518 20.0487C21.0726 20.8593 21.2496 21.7341 21.3293 22.6262C21.3784 23.1763 20.9273 23.625 20.375 23.625H6.625C6.07272 23.625 5.62163 23.1763 5.67075 22.6262C5.75041 21.7341 5.9274 20.8593 6.14822 20.0487Z" stroke="#33363F" stroke-width="2" stroke-linecap="round"/>
                         </svg>
                     </button>
-                    <svg class="pb bag s" xmlns="http://www.w3.org/2000/svg" width="27" height="27" viewBox="0 0 27 27" fill="none">
-                        <path d="M9 13.5L9 9C9 6.51472 11.0147 4.5 13.5 4.5V4.5C15.9853 4.5 18 6.51472 18 9L18 13.5" stroke="#33363F" stroke-width="2" stroke-linecap="round"/>
-                        <path d="M4.19435 13.7928C4.33942 12.0519 4.41196 11.1815 4.98605 10.6532C5.56013 10.125 6.4336 10.125 8.18053 10.125H18.8195C20.5664 10.125 21.4399 10.125 22.014 10.6532C22.588 11.1815 22.6606 12.0519 22.8057 13.7928L23.4445 21.4589C23.529 22.4724 23.5712 22.9792 23.2741 23.3021C22.977 23.625 22.4685 23.625 21.4514 23.625H5.5486C4.53155 23.625 4.02302 23.625 3.72592 23.3021C3.42882 22.9792 3.47105 22.4724 3.55551 21.4589L4.19435 13.7928Z" stroke="#33363F" stroke-width="2"/>
-                    </svg>
+                    <a href="shoppingcart.html">
+                        <svg class="pb bag s" xmlns="http://www.w3.org/2000/svg" width="27" height="27" viewBox="0 0 27 27" fill="none">
+                            <path d="M9 13.5L9 9C9 6.51472 11.0147 4.5 13.5 4.5V4.5C15.9853 4.5 18 6.51472 18 9L18 13.5" stroke="#33363F" stroke-width="2" stroke-linecap="round"/>
+                            <path d="M4.19435 13.7928C4.33942 12.0519 4.41196 11.1815 4.98605 10.6532C5.56013 10.125 6.4336 10.125 8.18053 10.125H18.8195C20.5664 10.125 21.4399 10.125 22.014 10.6532C22.588 11.1815 22.6606 12.0519 22.8057 13.7928L23.4445 21.4589C23.529 22.4724 23.5712 22.9792 23.2741 23.3021C22.977 23.625 22.4685 23.625 21.4514 23.625H5.5486C4.53155 23.625 4.02302 23.625 3.72592 23.3021C3.42882 22.9792 3.47105 22.4724 3.55551 21.4589L4.19435 13.7928Z" stroke="#33363F" stroke-width="2"/>
+                        </svg>
+                    </a>
                 </div>
             </div>
             <nav class="blur-container">
@@ -244,27 +246,33 @@
             </div>
         </footer>
     </div>
-    <!--login --> 
-    <div class="popup" id="myform">
+     <!--login --> 
+     <div class="popup" id="myform">
         <form class="popform">
             <div class="inlineh1">
                 <h1 class="h1pop v">Vytvořit účet</h1>
-                <button type="button" class="open_b button h1pop v" onclick="openLoginForm()" onclick="closeForm()">
-                Přihlášení
-                </button>
+                <button type="button" class="open_b button h1pop v" onclick="openLoginForm()">Přihlášení</button>
             </div>
             <div class="form-text">
                 <input type="text" placeholder="Křesní jméno" name="kresni" class="t_frm" required>
                 <input type="text" placeholder="Příjmení" name="prijmeni" class="t_frm" required>
                 <input type="text" placeholder="E-mail" name="email" class="t_frm" required>
-                <input type="password" placeholder="Heslo" name="kresni" class="t_frm" required>
+                <input type="password" placeholder="Heslo" name="kresni" class="t_frm" id="passwordInput" oninput="validatePasswordOnInput(this.value)" required>
+                    <div id="passwordRequirements" class="requirements">
+                        <p>Požadavky:&nbsp;</p>
+                        <p id="lengthReq">8 znaků,&nbsp;</p>
+                        <p id="uppercaseReq">velké písmeno,&nbsp;</p>
+                        <p id="lowercaseReq">malé písmeno,&nbsp;</p>
+                        <p id="digitReq">číslice,&nbsp;</p>
+                        <p id="specialCharReq">speciální znak</p>
+                    </div>
             </div>
             <div class="ch_text">
+                <input type="checkbox" id="checkbox" name="checkbox" class="checkll">
                 <label for="checkbox" class="check_text">Ano, přihlaste mě k odběru Newsletteru Alora. Potvrzuji, že jsem starší 16 let. Chci dostávat e-mailem informace od společnosti Alora o produktech Alora a exkluzivních nabídkách.</label>
-                <input type="checkbox" id="checkbox" name="checkbox">
             </div>
             <div class="s_btn">
-                <button type="submit" class="btn">Odeslat</button>
+                <button type="submit" class="btn" id="submitButton">Odeslat</button>
             </div>
         </form>
     </div>
@@ -272,19 +280,27 @@
     <div class="popup login_form" id="myform_login">
         <form class="popform">
             <div class="inlineh1">
-                <h1 class="h1pop v">Vytvořit účet</h1>
+                <button type="button" class="open_b button h1pop v" onclick="openForm()">Vytvořit účet</button>
                 <h1 class="h1pop p">Přihlášení</h1>
             </div>
             <div class="form-text">
                 <input type="text" placeholder="E-mail" name="email" class="t_frm" required>
-                <input type="password" placeholder="Heslo" name="kresni" class="t_frm" required>
+                <input type="password" placeholder="Heslo" name="kresni" class="t_frm" id="passwordInput" oninput="validatePasswordOnInput(this.value)" required>
+                <div id="passwordRequirements" class="requirements">
+                    <p>Požadavky:&nbsp;</p>
+                    <p id="lengthReq">8 znaků,&nbsp;</p>
+                    <p id="uppercaseReq">velké písmeno,&nbsp;</p>
+                    <p id="lowercaseReq">malé písmeno,&nbsp;</p>
+                    <p id="digitReq">číslice,&nbsp;</p>
+                    <p id="specialCharReq">speciální znak</p>
+                </div>
             </div>
             <div class="ch_text">
-                <label for="checkbox" class="check_text">Zapamatovat si mě</label>
                 <input type="checkbox" id="checkbox" name="checkbox">
+                <label for="checkbox" class="check_text">Zapamatovat si mě</label>
             </div>
             <div class="s_btn">
-                <button type="submit" class="btn">Odeslat</button>
+                <button type="submit" class="btn" id="submitButton">Odeslat</button>
             </div>
         </form>
     </div>
